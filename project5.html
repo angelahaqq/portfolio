@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - Angela Huang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <h1 class="title">Angela Huang</h1>
+            <h5 class="subtitle1">Multidisciplinary Designer</h5>
+        </div>
+        
+        <div class="item2">
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <div class="menu-item">
+                    <div class="menu-toggle" onclick="toggleSubmenu()">
+                        <span class="arrow">▶</span>
+                        <span>Projects</span>
+                    </div>
+                    <div class="submenu open" id="projectSubmenu">
+                        <a href="project1.html">Project 1</a>
+                        <a href="project2.html">Project 2</a>
+                        <a href="project3.html">Project 3</a>
+                        <a href="project4.html">Project 4</a>
+                        <a href="project5.html" class="active">Project 5</a>
+                        <a href="project6.html">Project 6</a>
+                        <a href="project7.html">Project 7</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+            </nav>
+        </div>
+        
+        <div class="item3">
+            <h2>Optical Illusion</h2>
+            
+            <div class="project-embed">
+                <iframe src="https://editor.p5js.org/angelahaqq/full/2l4Fh4fgq" width="100%" height="442" frameborder="0"></iframe>
+            </div>
+            
+            <div class="project-details">
+                <h3>Project Description</h3>
+                <p>A take on an optical illusion with flashing dots to digitally mimic the view of a grid style illusion. At a large scale, I can imagine this illusion being projected in an experimental gallery space. As visitors walk by the projected visual, which has a motion sensor pointed towards it, the dots will appear to mimic human movement.</p>
+            </div>
+        </div>
+        
+        <div class="item5">
+            <p>© 2025 Angela Huang. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSubmenu() {
+            const submenu = document.getElementById('projectSubmenu');
+            const arrow = document.querySelector('.arrow');
+            submenu.classList.toggle('open');
+            arrow.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
